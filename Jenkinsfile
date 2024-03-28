@@ -2,12 +2,6 @@ pipeline {
     agent any
     
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/JhaRashi/Task6.git'
-            }
-        }
-        
         stage('Build') {
             steps {
                 sh 'mvn clean install'
