@@ -4,7 +4,7 @@ pipeline {
         maven "MAVEN"
         jdk "JDK"
      }
-    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/JhaRashi/Task6.git']])
+   // checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/JhaRashi/Task6.git']])
     stages {
         stage('Build') {
             steps {
