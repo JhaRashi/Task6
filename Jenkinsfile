@@ -23,6 +23,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'mvn deploy'
+                sh 'curl http://localhost:8080'
             }
         }
     }
