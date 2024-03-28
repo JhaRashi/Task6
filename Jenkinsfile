@@ -2,7 +2,7 @@ pipeline {
     agent any
      tools {
         maven "apache-maven-3.9.6"
-        //jdk "JDK"
+        jdk "JDK"
      }
    // checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/JhaRashi/Task6.git']])
     stages {
